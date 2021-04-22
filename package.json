@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "assets/img/icon.ico"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx build && electron ./dist/index.js",
+    "build": "tsdx build",
+    "test": "tsdx test"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "funfox",
+  "author": "FunHB",
+  "description": "FunFox",
+  "module": "dist/funfox.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/funfox.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/funfox.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.10.2",
+    "@types/fs-extra": "^9.0.11",
+    "@types/jsdom": "^16.2.10",
+    "@types/node-fetch": "^2.5.10",
+    "electron": "12.0.5",
+    "husky": "^6.0.0",
+    "size-limit": "^4.10.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "jsdom": "^16.5.3",
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^9.0.0"
+  }
+}
