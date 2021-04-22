@@ -1,6 +1,6 @@
 # FunFox
 
-<img align="right" src=assets/img/icon.png height="150px">
+<img align="right" src=assets/img/icon.svg height="150px">
 
 FunFox is a scraper and downloader for manga chapters from [Fanfox](http://fanfox.net/) written in **Typescript** with **Nodejs** and [Electron](https://www.electronjs.org/)
 
